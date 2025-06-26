@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Depression Detection System</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; }
+    header { background: #2c3e50; color: white; padding: 1rem; text-align: center; }
+    section { padding: 2rem; max-width: 800px; margin: auto; background: white; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #2c3e50; }
+    a.button { background: #2980b9; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem; }
+    footer { text-align: center; padding: 1rem; color: #777; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Depression Detection System</h1>
+    <p>Webcam + Questionnaire-Based Mental Health Screening</p>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>This project uses a webcam and a simple health questionnaire to help detect signs of depression. The system tracks facial expressions for 10 minutes using AI-based emotion detection, alongside user-reported symptoms.</p>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <ul>
+      <li>🔍 Emotion detection using a webcam and DeepFace</li>
+      <li>🧠 4-question health survey (sleep, guilt, appetite, concentration)</li>
+      <li>📊 Final assessment based on DSM-5 symptom mapping</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Installation Guide (for Windows)</h2>
+    <ol>
+      <li>Install <strong>Python 3.7+</strong> from <a href="https://www.python.org/downloads/" target="_blank">python.org</a></li>
+      <li>Install <strong>Visual Studio Code</strong> from <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a></li>
+      <li>Open VS Code and install the Python extension</li>
+      <li>Unzip the downloaded file below and open the folder in VS Code</li>
+      <li>In the terminal, run:<br /><code>pip install opencv-python deepface</code></li>
+      <li>Run <code>main.py</code> to start detection</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Download Project</h2>
+    <p>Click below to download the full project (ZIP format):</p>
+    <a class="button" href="/mnt/data/depression_full_system.zip" download>📥 Download Depression Detection Tool</a>
+  </section>
+
+  <footer>
+    &copy; 2025 | Depression Detection System by Shalinda Kaushan | For research and educational use
+  </footer>
+</body>
+</html>
