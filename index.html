@@ -1,86 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Human-Centered Depression Detection</title>
+  <meta charset="UTF-8">
+  <title>Depression Detector – Project Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #2b7de9; color: white; padding: 40px 20px; text-align: center; }
-    nav { background: #fff; padding: 10px 20px; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    nav a { margin-right: 20px; text-decoration: none; color: #2b7de9; font-weight: bold; }
-    section { padding: 40px 20px; background: white; margin: 20px auto; width: 90%; max-width: 1000px; border-radius: 10px; }
-    h2 { color: #2b7de9; }
-    img { max-width: 100%; border-radius: 10px; margin-top: 20px; }
-    footer { text-align: center; padding: 20px; background: #222; color: white; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #2b7de9;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      background: white;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2b7de9;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Human-Centered Design For Ambient Assisted Living</h1>
-  <p>Stress Level Prediction for Elderly and Disabled People using AI</p>
+  <h1>Depression Detection System</h1>
+  <p>AI-Based Multimodal Mental Health Monitor</p>
 </header>
 
-<nav>
-  <a href="#overview">Overview</a>
-  <a href="#methods">Detection Methods</a>
-  <a href="#hardware">Hardware</a>
-  <a href="#images">Images</a>
-  <a href="#howtorun">Run Module</a>
-</nav>
-
-<section id="overview">
+<section>
   <h2>🔍 Project Overview</h2>
-  <p>This system aims to assist elderly and disabled individuals by predicting stress and depression levels using computer vision and AI. It involves software, hardware, and a dedicated website interface.</p>
+  <p>
+    This project presents a smart and accessible depression detection system using three integrated methods:
+    <strong>real-time emotion analysis via webcam, DSM-5-based questionnaire, and text input analysis</strong>.
+    The system is designed for individuals, especially the elderly and disabled, who need early detection tools for mental health support.
+  </p>
 </section>
 
-<section id="methods">
-  <h2>🧠 Detection Methods</h2>
+<section>
+  <h2>🧠 How Our System Works</h2>
   <ul>
-    <li><b>Facial Emotion Detection:</b> Uses webcam and OpenCV for real-time emotion tracking.</li>
-    <li><b>Motion Detection:</b> Tracks body movement, stillness, blinking to identify signs of stress or depression.</li>
-    <li><b>DSM-5 Questionnaire:</b> Interactive form filled by user to score stress/depression risk.</li>
-    <li><b>Text Input Analysis:</b> Uses NLP to analyze emotional sentiment in free-form text.</li>
-    <li><b>Report Generation:</b> Combines all methods to generate a downloadable stress report.</li>
+    <li><strong>Webcam Emotion Recognition:</strong> Facial expressions, eye movements, and posture are monitored live using OpenCV and deep learning. The system tracks micro-expressions and emotion duration for up to 10 minutes.</li>
+    <li><strong>Motion Analysis:</strong> Body stillness, head tilt, blinking rate, and lack of engagement are signs of depressive behavior patterns, tracked over time.</li>
+    <li><strong>Questionnaire (DSM-5):</strong> The user fills out a clinical survey covering sleep, energy, mood, and suicidal thoughts. Scores are used to assess severity based on PHQ-9/PHQ-8 standards.</li>
+    <li><strong>Text Input Analysis:</strong> NLP models evaluate sentiment in typed journal entries or thoughts, detecting keywords associated with sadness, hopelessness, or social withdrawal.</li>
+    <li><strong>Fusion & Decision:</strong> All scores are combined using a deep learning fusion model to predict overall depression risk (low / moderate / high).</li>
   </ul>
 </section>
 
-<section id="hardware">
-  <h2>🔌 Hardware Implementation</h2>
+<section>
+  <h2>📊 Visual Output</h2>
+  <p>After detection, the system generates:</p>
   <ul>
-    <li><b>Raspberry Pi Zero 2 W:</b> Runs lightweight models with USB webcam for real-time tracking.</li>
-    <li><b>NodeMCU:</b> Sends sensor data or control outputs to display emotion alerts.</li>
-    <li><b>Webcam:</b> Captures facial expressions and motion data in real-time.</li>
+    <li>Emotion timeline graph: tracking happiness, sadness, and anger</li>
+    <li>Questionnaire bar chart: PHQ-9 category scores</li>
+    <li>Text sentiment heatmap</li>
+    <li>Final report with suggestions and resource links</li>
   </ul>
+  <img src="https://www.researchgate.net/profile/Ruben-Casas/publication/361187655/figure/fig2/AS:1150723625199616@1654955296649/System-architecture-for-depression-detection.png" alt="System Architecture">
 </section>
 
-<section id="images">
-  <h2>📷 Visuals & Architecture</h2>
-  <img src="images/elder_care.jpg" alt="Elder People Care">
-  <img src="images/emotion_graph.png" alt="Emotion Detection Graph">
-  <img src="images/phq_chart.png" alt="PHQ-9 Depression Scores">
-  <img src="images/system_architecture.png" alt="System Architecture">
+<section>
+  <h2>🎯 Final Goals</h2>
+  <p>
+    Our aim is to build a digital mental health assistant that can help detect early signs of depression in individuals who may not realize their symptoms. It empowers users to reflect, seek support, and get professional help when necessary.
+  </p>
+  <p><strong>Note:</strong> This tool is not a replacement for clinical diagnosis. It is a first-level early screening aid.</p>
 </section>
 
-<section id="howtorun">
-  <h2>🖥️ How to Run the Detection Module</h2>
-  <ol>
-    <li>Extract the downloaded project zip file.</li>
-    <li>Install Python dependencies:
-      <pre>pip install -r requirements.txt</pre>
-    </li>
-    <li>Run the main script:
-      <pre>python main.py</pre>
-    </li>
-    <li>Use the webcam to capture real-time expressions.</li>
-    <li>Fill the questionnaire and submit the report for final output.</li>
-  </ol>
+<section>
+  <h2>📚 Research References</h2>
+  <ul>
+    <li>1. <em>Multimodal Depression Detection using Facial and Text Analysis</em> – Springer, 2022</li>
+    <li>2. <em>Detecting Depression from Real-Time Facial Expression</em> – IEEE, 2023</li>
+    <li>3. <em>PHQ-9 Questionnaire Analysis for Mental Health Monitoring</em> – Elsevier, 2021</li>
+    <li>4. <em>NLP for Mental State Prediction via Text Input</em> – ACM Transactions, 2022</li>
+  </ul>
 </section>
 
 <footer>
-  <p>© 2025 Ayesh Fernando | Final Year Project | Mechatronics Engineering</p>
+  <p>© 2025 Depression Detector by Ayesh Fernando | BSc. Hons Mechatronic Engineering</p>
 </footer>
 
 </body>
