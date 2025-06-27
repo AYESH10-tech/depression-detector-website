@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Depression Detection for Elderly and Disabled</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('images/bg_texture.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+    header {
+      background: rgba(43, 125, 233, 0.85);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      color: #2b7de9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 30px auto;
+      padding: 40px;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2b7de9;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    a.download {
+      display: inline-block;
+      background: #2b7de9;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Human-Centered Stress & Depression Detection</h1>
+  <p>Final Year Project | Assistive Tech for Elderly and Disabled People</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#methods">Methods</a>
+  <a href="#hardware">Hardware</a>
+  <a href="#howtorun">Run Module</a>
+  <a href="#download">Download</a>
+</nav>
+
+<section id="overview">
+  <h2>🔍 Project Overview</h2>
+  <p>This project introduces a complete system for detecting depression and stress in elderly and disabled people using a human-centered design approach. It integrates multiple AI techniques and hardware tools to assist in health monitoring and early mental health prediction.</p>
+  <img src="images/elder_care.jpg" alt="Elderly Care">
+</section>
+
+<section id="methods">
+  <h2>🧠 Detection Methods</h2>
+  <ul>
+    <li><b>Emotion Detection:</b> Real-time facial emotion recognition using computer vision.</li>
+    <li><b>Motion Tracking:</b> Detects physical stillness or fatigue over time.</li>
+    <li><b>Questionnaire:</b> DSM-5-based interactive form to score mental health risk.</li>
+    <li><b>Text Sentiment Analysis:</b> Detects depressive keywords from user input.</li>
+  </ul>
+  <img src="images/emotion_graph.png" alt="Emotion Graph" />
+</section>
+
+<section id="hardware">
+  <h2>🛠️ Hardware Integration</h2>
+  <ul>
+    <li><b>Raspberry Pi Zero 2 W:</b> Low-power deployment of the detection model with USB webcam.</li>
+    <li><b>NodeMCU:</b> Transmits alerts or health status to remote server or display.</li>
+    <li><b>Webcam:</b> Captures facial features for emotion and motion analysis.</li>
+  </ul>
+  <img src="images/system_architecture.png" alt="System Architecture" />
+</section>
+
+<section id="howtorun">
+  <h2>🖥️ How to Run the Python Module</h2>
+  <ol>
+    <li>Ensure Python 3.x is installed.</li>
+    <li>Open a terminal inside the extracted module folder.</li>
+    <li>Run:
+      <pre>pip install -r requirements.txt</pre>
+    </li>
+    <li>Then run:
+      <pre>python main.py</pre>
+    </li>
+    <li>The webcam will activate. Follow the prompts to complete tests and get a report.</li>
+  </ol>
+</section>
+
+<section id="download">
+  <h2>📦 Download Detection Module</h2>
+  <p>Click below to download the full Python detection module, including emotion tracking, questionnaire, and report generation:</p>
+  <a class="download" href="depression_module.zip" download>📥 Download Python Module (ZIP)</a>
+</section>
+
+<footer>
+  <p>© 2025 Ayesh Fernando | Mechatronic Engineering | Depression Detection System</p>
+</footer>
+
+</body>
+</html>
